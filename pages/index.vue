@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <nuxt-link to="/users">Users</nuxt-link>
-  </section>
+   </section>
 </template>
 
 <script>
