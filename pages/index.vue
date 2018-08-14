@@ -1,8 +1,6 @@
 <template>
   <section class="container">
     <nuxt-link to="/users">Users</nuxt-link>
-    <button @click="$router.push('/products')">Go to Products</button>
-    <nuxt-link to="/products">Products</nuxt-link>
   </section>
 </template>
 
