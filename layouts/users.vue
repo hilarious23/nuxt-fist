@@ -1,6 +1,9 @@
 <template>
   <div>
     <Header />
+    <header>
+        USERS SECTION
+    </header>
     <nuxt/>
   </div>
 </template>
@@ -9,12 +12,13 @@
 import Header from '~/components/Header.vue'
 
 export default {
-  components: {
-    Header
-  }
+    components: {
+        Header
+    }
 }
 </script>
 
 
 <style>
+
 </style>

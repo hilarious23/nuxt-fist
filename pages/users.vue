@@ -3,12 +3,14 @@
     <div>
         <input type="text" v-model="userId">
         <button @click="onLoadUser">Load User</button>
-        <!-- ここにusersフォルダのindex.vueが入る→methodsで_idのindex.vueに変わる -->
+        <!-- ここにusersフォルダのindex.vueが入る→methodsでrouteして_idのindex.vueに変わる -->
         <nuxt-child />
     </div>
 </template>
 
 <script>
+import Header from '~/components/Header.vue'
+
 export default {
     data() {
         return {
@@ -19,7 +21,8 @@ export default {
         onLoadUser() {
             this.$router.push('/users/' + this.userId )
         }
-    }
+    },
+    layout: 'users'
 }
 </script>
 
